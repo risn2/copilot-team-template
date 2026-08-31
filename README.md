@@ -15,6 +15,7 @@
 
 ## Copilot 設定
 - 共通指示: `.github/copilot-instructions.md`
+- 言語別指示: `.github/instructions/*.instructions.md`
 - エージェント定義: `.github/agents/`
 - スキル定義: `.github/skills/<skill-name>/SKILL.md`
 
@@ -42,11 +43,18 @@
 - `safe-implementation`: 実装、検証、レビュー、PR準備
 
 ## 言語想定
-- C
-- C++
-- C#
-- Python
-- Node.js / JavaScript / TypeScript
+言語別の公式または言語提供元の規約は、GitHub Copilot のパス固有指示として用意しています。
+
+| 言語 | 指示ファイル | 主な参照規約 |
+| --- | --- | --- |
+| C | `.github/instructions/c.instructions.md` | SEI CERT C Coding Standard |
+| C++ | `.github/instructions/cpp.instructions.md` | C++ Core Guidelines |
+| C# | `.github/instructions/csharp.instructions.md` | Microsoft .NET coding conventions |
+| Python | `.github/instructions/python.instructions.md` | PEP 8、PEP 257 |
+| JavaScript | `.github/instructions/javascript.instructions.md` | MDN JavaScript guidelines |
+| TypeScript | `.github/instructions/typescript.instructions.md` | Microsoft TypeScript coding guidelines |
+
+各ファイルの `applyTo` に一致するソースへ、共通指示と併せて適用されます。導入先の formatter、linter、コンパイラ設定、既存規約がより具体的な場合は、導入先の設定を優先してください。
 
 ## 使い方
 1. このテンプレートをベースに各プロジェクトへ適用
@@ -56,5 +64,6 @@
 
 ## メンテナンス
 - GitHub Copilot の設定仕様変更時に、エージェントの frontmatter と Skill の構造を確認します。
+- 言語別指示の `applyTo`、参照規約、リンクを定期的に確認します。
 - 固定モデルは定期的に見直し、不要になった指定を削除します。
 - 指示が長くなった場合は、常時必要な規則だけを共通指示に残し、工程固有の手順を Skill へ分離します。

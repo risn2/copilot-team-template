@@ -3,6 +3,7 @@
 このディレクトリには、docs-first 開発フローを強制するテンプレートを配置しています。
 
 - Common Instructions: `.github/copilot-instructions.md`
+- Language Instructions: `.github/instructions/*.instructions.md`
 - Custom Agents: `.github/agents/*.agent.md`
 - Agent Skills: `.github/skills/<skill-name>/SKILL.md`
 - Pull Request Template: `.github/pull_request_template.md`
