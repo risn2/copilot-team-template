@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lychee Redmine Burndown MVP</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="hero">
+        <p class="eyebrow">Lychee Redmine Burndown MVP</p>
+        <h1>スプリント基準のユーザー別バーンダウン</h1>
+        <p class="hero-copy">
+          表示期間は任意入力ではなく、Lychee Redmine のスプリント設定を主軸として扱います。
+        </p>
+      </header>
+
+      <section class="toolbar" aria-label="バーンダウンフィルター">
+        <label>
+          <span>スプリント</span>
+          <select id="sprint-select"></select>
+        </label>
+        <label>
+          <span>ユーザー</span>
+          <select id="user-select"></select>
+        </label>
+      </section>
+
+      <p id="status-message" class="status-message" hidden></p>
+
+      <section class="summary-grid" aria-label="スプリントサマリー">
+        <article class="summary-card">
+          <h2>期間</h2>
+          <p id="summary-period" class="summary-value">-</p>
+        </article>
+        <article class="summary-card">
+          <h2>計画ポイント</h2>
+          <p id="summary-planned" class="summary-value">-</p>
+        </article>
+        <article class="summary-card">
+          <h2>完了ポイント</h2>
+          <p id="summary-completed" class="summary-value">-</p>
+        </article>
+        <article class="summary-card">
+          <h2>残ポイント</h2>
+          <p id="summary-remaining" class="summary-value">-</p>
+        </article>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <div>
+            <h2 id="chart-title">バーンダウン</h2>
+            <p id="chart-subtitle" class="muted">-</p>
+          </div>
+          <div class="legend" aria-label="グラフ凡例">
+            <span><i class="legend-swatch legend-swatch--actual"></i>残ポイント</span>
+            <span><i class="legend-swatch legend-swatch--ideal"></i>理想線</span>
+          </div>
+        </div>
+        <div id="chart-empty" class="empty-state" hidden>系列データがありません。</div>
+        <svg id="burndown-chart" class="chart" viewBox="0 0 760 320" role="img" aria-labelledby="chart-title chart-subtitle"></svg>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>日次詳細</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">日付</th>
+                <th scope="col">残ポイント</th>
+                <th scope="col">理想線</th>
+                <th scope="col">完了累計</th>
+              </tr>
+            </thead>
+            <tbody id="daily-table-body"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

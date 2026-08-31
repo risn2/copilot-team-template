@@ -54,6 +54,17 @@
 3. Copilot Chat / Coding Agent で実装を進行
 4. 導入先の言語、ビルド、テスト、セキュリティ要件に合わせて指示と Skill を更新
 
+## MVP サンプル
+- 要求仕様: `docs/requirements/lychee-redmine-burndown-mvp.md`
+- 詳細設計: `docs/design/lychee-redmine-burndown-mvp.md`
+- 実装計画: `docs/implementation-plans/lychee-redmine-burndown-mvp.md`
+- UI: `mvp/index.html`
+
+最小確認手順:
+1. `python3 -m http.server 8000` をリポジトリルートで起動
+2. `http://127.0.0.1:8000/mvp/` を開く
+3. クエリ例: `http://127.0.0.1:8000/mvp/?sprint=sprint-2026-09-a&user=u-mei`
+
 ## メンテナンス
 - GitHub Copilot の設定仕様変更時に、エージェントの frontmatter と Skill の構造を確認します。
 - 固定モデルは定期的に見直し、不要になった指定を削除します。
