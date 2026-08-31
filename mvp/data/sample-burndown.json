@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "generatedAt": "2026-08-31T00:00:00Z",
+    "sprintSource": "Lychee sprint configuration",
+    "notes": [
+      "MVP sample data only",
+      "Sprint window is authoritative for the chart period"
+    ]
+  },
+  "sprints": [
+    {
+      "id": "sprint-2026-09-a",
+      "name": "Sprint 2026-09 A",
+      "projectId": 10,
+      "projectName": "Product Alpha",
+      "startDate": "2026-09-01",
+      "endDate": "2026-09-14",
+      "timezone": "Asia/Tokyo",
+      "pointField": "lychee_backlog_point"
+    },
+    {
+      "id": "sprint-2026-09-b",
+      "name": "Sprint 2026-09 B",
+      "projectId": 10,
+      "projectName": "Product Alpha",
+      "startDate": "2026-09-15",
+      "endDate": "2026-09-28",
+      "timezone": "Asia/Tokyo",
+      "pointField": "lychee_backlog_point"
+    }
+  ],
+  "users": [
+    {
+      "id": "u-aki",
+      "name": "Aki Tanaka"
+    },
+    {
+      "id": "u-mei",
+      "name": "Mei Sato"
+    }
+  ],
+  "burndowns": [
+    {
+      "sprintId": "sprint-2026-09-a",
+      "userId": "u-aki",
+      "plannedPoints": 21,
+      "completedPoints": 8,
+      "remainingPoints": 13,
+      "series": [
+        { "date": "2026-09-01", "remainingPoints": 21, "idealRemainingPoints": 21, "completedPoints": 0 },
+        { "date": "2026-09-02", "remainingPoints": 21, "idealRemainingPoints": 19, "completedPoints": 0 },
+        { "date": "2026-09-03", "remainingPoints": 18, "idealRemainingPoints": 18, "completedPoints": 3 },
+        { "date": "2026-09-04", "remainingPoints": 18, "idealRemainingPoints": 16, "completedPoints": 3 },
+        { "date": "2026-09-05", "remainingPoints": 16, "idealRemainingPoints": 15, "completedPoints": 5 },
+        { "date": "2026-09-06", "remainingPoints": 16, "idealRemainingPoints": 13, "completedPoints": 5 },
+        { "date": "2026-09-07", "remainingPoints": 16, "idealRemainingPoints": 12, "completedPoints": 5 },
+        { "date": "2026-09-08", "remainingPoints": 15, "idealRemainingPoints": 10, "completedPoints": 6 },
+        { "date": "2026-09-09", "remainingPoints": 15, "idealRemainingPoints": 9, "completedPoints": 6 },
+        { "date": "2026-09-10", "remainingPoints": 14, "idealRemainingPoints": 7, "completedPoints": 7 },
+        { "date": "2026-09-11", "remainingPoints": 14, "idealRemainingPoints": 6, "completedPoints": 7 },
+        { "date": "2026-09-12", "remainingPoints": 13, "idealRemainingPoints": 4, "completedPoints": 8 },
+        { "date": "2026-09-13", "remainingPoints": 13, "idealRemainingPoints": 3, "completedPoints": 8 },
+        { "date": "2026-09-14", "remainingPoints": 13, "idealRemainingPoints": 0, "completedPoints": 8 }
+      ]
+    },
+    {
+      "sprintId": "sprint-2026-09-a",
+      "userId": "u-mei",
+      "plannedPoints": 13,
+      "completedPoints": 6,
+      "remainingPoints": 7,
+      "series": [
+        { "date": "2026-09-01", "remainingPoints": 13, "idealRemainingPoints": 13, "completedPoints": 0 },
+        { "date": "2026-09-02", "remainingPoints": 12, "idealRemainingPoints": 12, "completedPoints": 1 },
+        { "date": "2026-09-03", "remainingPoints": 12, "idealRemainingPoints": 11, "completedPoints": 1 },
+        { "date": "2026-09-04", "remainingPoints": 10, "idealRemainingPoints": 10, "completedPoints": 3 },
+        { "date": "2026-09-05", "remainingPoints": 10, "idealRemainingPoints": 8, "completedPoints": 3 },
+        { "date": "2026-09-06", "remainingPoints": 9, "idealRemainingPoints": 7, "completedPoints": 4 },
+        { "date": "2026-09-07", "remainingPoints": 9, "idealRemainingPoints": 6, "completedPoints": 4 },
+        { "date": "2026-09-08", "remainingPoints": 8, "idealRemainingPoints": 5, "completedPoints": 5 },
+        { "date": "2026-09-09", "remainingPoints": 8, "idealRemainingPoints": 4, "completedPoints": 5 },
+        { "date": "2026-09-10", "remainingPoints": 8, "idealRemainingPoints": 3, "completedPoints": 5 },
+        { "date": "2026-09-11", "remainingPoints": 7, "idealRemainingPoints": 2, "completedPoints": 6 },
+        { "date": "2026-09-12", "remainingPoints": 7, "idealRemainingPoints": 1, "completedPoints": 6 },
+        { "date": "2026-09-13", "remainingPoints": 7, "idealRemainingPoints": 1, "completedPoints": 6 },
+        { "date": "2026-09-14", "remainingPoints": 7, "idealRemainingPoints": 0, "completedPoints": 6 }
+      ]
+    },
+    {
+      "sprintId": "sprint-2026-09-b",
+      "userId": "u-aki",
+      "plannedPoints": 18,
+      "completedPoints": 4,
+      "remainingPoints": 14,
+      "series": [
+        { "date": "2026-09-15", "remainingPoints": 18, "idealRemainingPoints": 18, "completedPoints": 0 },
+        { "date": "2026-09-16", "remainingPoints": 17, "idealRemainingPoints": 17, "completedPoints": 1 },
+        { "date": "2026-09-17", "remainingPoints": 17, "idealRemainingPoints": 15, "completedPoints": 1 },
+        { "date": "2026-09-18", "remainingPoints": 17, "idealRemainingPoints": 14, "completedPoints": 1 },
+        { "date": "2026-09-19", "remainingPoints": 16, "idealRemainingPoints": 13, "completedPoints": 2 },
+        { "date": "2026-09-20", "remainingPoints": 16, "idealRemainingPoints": 12, "completedPoints": 2 },
+        { "date": "2026-09-21", "remainingPoints": 16, "idealRemainingPoints": 10, "completedPoints": 2 },
+        { "date": "2026-09-22", "remainingPoints": 15, "idealRemainingPoints": 9, "completedPoints": 3 },
+        { "date": "2026-09-23", "remainingPoints": 15, "idealRemainingPoints": 8, "completedPoints": 3 },
+        { "date": "2026-09-24", "remainingPoints": 15, "idealRemainingPoints": 6, "completedPoints": 3 },
+        { "date": "2026-09-25", "remainingPoints": 14, "idealRemainingPoints": 5, "completedPoints": 4 },
+        { "date": "2026-09-26", "remainingPoints": 14, "idealRemainingPoints": 4, "completedPoints": 4 },
+        { "date": "2026-09-27", "remainingPoints": 14, "idealRemainingPoints": 2, "completedPoints": 4 },
+        { "date": "2026-09-28", "remainingPoints": 14, "idealRemainingPoints": 0, "completedPoints": 4 }
+      ]
+    }
+  ]
+}
