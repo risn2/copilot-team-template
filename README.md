@@ -48,11 +48,20 @@
 - Python
 - Node.js / JavaScript / TypeScript
 
-## 使い方
-1. このテンプレートをベースに各プロジェクトへ適用
-2. `docs/` のテンプレートをコピーして仕様・設計・実装計画を記述
-3. Copilot Chat / Coding Agent で実装を進行
-4. 導入先の言語、ビルド、テスト、セキュリティ要件に合わせて指示と Skill を更新
+## 使い方（Visual Studio Code）
+
+### 前提
+- Visual Studio Code がインストールされている
+- Visual Studio Code に GitHub Copilot 拡張機能がインストールされ、GitHub にサインインしている
+- Git が利用できる
+
+### 手順
+1. GitHub の **Use this template** からリポジトリを作成し、ローカルへクローンします。
+2. Visual Studio Code でクローンしたフォルダーを開きます。
+3. 導入先の言語、ビルド、テスト、セキュリティ要件に合わせて `.github/copilot-instructions.md` と必要な Agent Skills を更新します。
+4. `docs/requirements/template.md`、`docs/design/template.md`、`docs/implementation-plans/template.md` をコピーし、対象機能の要求仕様、詳細設計、実装計画を順に作成します。
+5. Visual Studio Code の Copilot Chat を開き、作成した文書をコンテキストとして実装を依頼します。利用可能な場合は、チャットのエージェント選択から作業に適したカスタムエージェントを選びます。
+6. 実装後にプロジェクト固有の lint、ビルド、テストを実行し、結果を確認してから Pull Request を作成します。
 
 ## メンテナンス
 - GitHub Copilot の設定仕様変更時に、エージェントの frontmatter と Skill の構造を確認します。
