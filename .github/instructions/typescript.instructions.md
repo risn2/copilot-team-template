@@ -4,7 +4,7 @@ applyTo: "**/*.ts,**/*.tsx,**/*.mts,**/*.cts"
 
 # TypeScript
 
-Follow Microsoft's [TypeScript coding guidelines](https://github.com/microsoft/TypeScript/wiki/Coding-guidelines) as the language-provider baseline.
+Microsoft's [TypeScript coding guidelines](https://github.com/microsoft/TypeScript/wiki/Coding-guidelines) apply to the TypeScript codebase rather than prescribing a universal community style. Use them as the language-provider reference where this repository has no more specific convention.
 
 - Prefer the repository's `tsconfig`, supported runtimes, formatter, linter, package metadata, and established conventions when they are more specific.
 - Preserve strict type safety. Avoid `any`; use `unknown` with narrowing when a value's type is not yet known.

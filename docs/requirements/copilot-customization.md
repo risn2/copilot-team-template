@@ -52,4 +52,4 @@
 ## 8. 未決事項
 - 組織ポリシーで Auto を強制するかは、各導入先の管理者が決定する。
 - 個別エージェントでのモデル固定は、導入先の利用可能モデルと料金体系に合わせて判断する。
-- C と JavaScript には言語仕様策定団体による単一の一般向けスタイル規約がないため、C は SEI CERT C、JavaScript は MDN のガイドラインを既定の参照先とする。
+- C、JavaScript、TypeScript には言語仕様策定団体または提供元による単一の一般向けスタイル規約がないため、C は SEI CERT C、JavaScript は MDN、TypeScript は Microsoft の TypeScript コードベース向けガイドラインを既定の参照先とし、適用範囲を明記する。
