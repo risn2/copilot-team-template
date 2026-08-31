@@ -26,6 +26,7 @@
 - エージェントで `model` を省略し、Copilot の既定または Auto 選択を利用する。
 - 言語別ファイルは `.github/instructions/<language>.instructions.md` とし、YAML frontmatter の `applyTo` にカンマ区切りの glob を指定する。
 - 拡張子の割り当ては、C が `*.c` と `*.h`、C++ が `*.cc`、`*.cpp`、`*.cxx`、`*.hh`、`*.hpp`、`*.hxx`、C# が `*.cs`、Python が `*.py` と `*.pyi`、JavaScript が `*.js`、`*.jsx`、`*.mjs`、`*.cjs`、TypeScript が `*.ts`、`*.tsx`、`*.mts`、`*.cts` とする。
+- `.h` は C と C++ の両方で使われるため、テンプレート既定では重複適用を避けて C に割り当てる。C++ ヘッダーへ `.h` を使う導入先は、C と C++ の `applyTo` を調整する。
 - リポジトリの formatter、linter、コンパイラ設定と既存規約を言語別指示より優先する。
 
 ## 6. エラーハンドリング
