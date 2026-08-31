@@ -1,0 +1,78 @@
+name: "Feature Request (Docs-First)"
+description: "新機能・改善の提案（要求仕様→詳細設計→実装計画を必須化）"
+title: "[Feature] "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        このIssueは docs-first フローを前提とします。
+        まず要求仕様書・詳細設計書・実装計画を作成してください。
+
+  - type: input
+    id: background
+    attributes:
+      label: 背景
+      placeholder: なぜこの機能が必要か
+    validations:
+      required: true
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: 目的
+      placeholder: この機能で達成したいこと
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: スコープ
+      description: In Scope / Out of Scope を明記してください
+      placeholder: |
+        In Scope:
+        Out of Scope:
+    validations:
+      required: true
+
+  - type: textarea
+    id: requirements
+    attributes:
+      label: 機能要件 / 非機能要件
+      placeholder: 要件を箇条書き
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 受け入れ基準
+      placeholder: 完了判定条件
+    validations:
+      required: true
+
+  - type: input
+    id: requirements_doc
+    attributes:
+      label: 要求仕様書パス
+      placeholder: docs/requirements/<feature>.md
+    validations:
+      required: true
+
+  - type: input
+    id: design_doc
+    attributes:
+      label: 詳細設計書パス
+      placeholder: docs/design/<feature>.md
+    validations:
+      required: true
+
+  - type: input
+    id: plan_doc
+    attributes:
+      label: 実装計画書パス
+      placeholder: docs/implementation-plans/<feature>.md
+    validations:
+      required: true

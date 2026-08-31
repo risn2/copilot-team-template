@@ -1,0 +1,62 @@
+name: "Bug Report (Docs-First)"
+description: "不具合報告（原因分析と修正計画を文書化）"
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: 概要
+      placeholder: 何が起きているか
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待結果
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 実際の結果
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: 影響範囲
+      placeholder: ユーザー影響、業務影響、回避策の有無
+    validations:
+      required: true
+
+  - type: input
+    id: design_doc
+    attributes:
+      label: 修正設計書パス
+      placeholder: docs/design/<bugfix>.md
+    validations:
+      required: true
+
+  - type: input
+    id: plan_doc
+    attributes:
+      label: 修正実装計画書パス
+      placeholder: docs/implementation-plans/<bugfix>.md
+    validations:
+      required: true
